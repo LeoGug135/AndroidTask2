@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#1E1E1E"
+    android:stretchColumns="1">
+
+    <!-- 顶部标题 -->
+    <TextView
+        android:layout_span="3"
+        android:background="#A0A0A0"
+        android:padding="10dp"
+        android:text="Hello TableLayout"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- 第一项：Open... -->
+    <TableRow>
+        <!-- 第一列：宽度缩小为 30dp，去掉左右内边距 -->
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:text="" />
+        <!-- 第二列：水平内边距改为 8dp -->
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Open..." android:textColor="#E0E0E0" android:textSize="16sp" />
+        <!-- 第三列：水平内边距改为 8dp -->
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:gravity="right" android:text="Ctrl-O" android:textColor="#E0E0E0" android:textSize="16sp" />
+    </TableRow>
+
+    <!-- 第二项：Save... -->
+    <TableRow>
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:text="" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Save..." android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:gravity="right" android:text="Ctrl-S" android:textColor="#E0E0E0" android:textSize="16sp" />
+    </TableRow>
+
+    <!-- 第三项：Save As... -->
+    <TableRow>
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:text="" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Save As..." android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:gravity="right" android:text="Ctrl-Shift-S" android:textColor="#E0E0E0" android:textSize="16sp" />
+    </TableRow>
+
+    <!-- 分割线 -->
+    <View android:layout_height="1dp" android:background="#555555" android:layout_span="3" />
+
+    <!-- 第四项：X Import... -->
+    <TableRow>
+        <!-- 第一列：X 居中显示，宽度 30dp 足够容纳且不留过多空白 -->
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:gravity="center" android:text="X" android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Import..." android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="" />
+    </TableRow>
+
+    <!-- 第五项：X Export... -->
+    <TableRow>
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:gravity="center" android:text="X" android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Export..." android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:gravity="right" android:text="Ctrl-E" android:textColor="#E0E0E0" android:textSize="16sp" />
+    </TableRow>
+
+    <!-- 分割线 -->
+    <View android:layout_height="1dp" android:background="#555555" android:layout_span="3" />
+
+    <!-- 第六项：Quit -->
+    <TableRow>
+        <TextView android:layout_width="30dp" android:paddingVertical="10dp" android:text="" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="Quit" android:textColor="#E0E0E0" android:textSize="16sp" />
+        <TextView android:paddingVertical="10dp" android:paddingHorizontal="8dp" android:text="" />
+    </TableRow>
+
+</TableLayout>

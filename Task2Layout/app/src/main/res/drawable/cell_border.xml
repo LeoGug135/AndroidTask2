@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1E1E1E" />
+    <!-- 边框粗细改为 2dp，灰色调深一点 -->
+    <stroke android:width="2dp" android:color="#888888" />
+    <!-- 内边距，保证文字不贴边 -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp" />
+</shape>
